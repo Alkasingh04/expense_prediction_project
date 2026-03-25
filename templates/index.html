@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Expense Predictor</title>
+</head>
+
+<body>
+
+   <h2>Expense Prediction</h2>
+
+   <form action="/predict" method="post">
+
+      Income
+      <input type="text" name="Income" required>
+
+      Age
+      <input type="text" name="Age" required>
+
+      <button type="submit">Predict</button>
+
+   </form>
+
+   <h3>{{ prediction_text }}</h3>
+
+</body>
+
+</html>
